@@ -101,8 +101,8 @@ AUTH_PASSWORD_VALIDATORS = [
 ]
 
 ALLOWED_HOSTS = [
-    "clearcomsolutions.com",
-    "www.clearcomsolutions.com",
+    "www.clearcomgroupmw.com",
+    "clearcomgroupmw.com",
     "clearcom-website.onrender.com",
 ]
 
