@@ -1,0 +1,111 @@
+/* Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Base */
+body {
+  font-family: "Segoe UI", Roboto, Arial, sans-serif;
+  background-color: #f4f6f8;
+  color: #1f2937;
+  line-height: 1.6;
+}
+
+/* Layout */
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 1.5rem;
+}
+
+/* Header */
+.site-header {
+  background: #0f172a;
+  color: #ffffff;
+}
+
+.site-header .logo {
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.site-header nav {
+  margin-top: 0.5rem;
+}
+
+.site-header nav a {
+  color: #e5e7eb;
+  text-decoration: none;
+  margin-right: 1.2rem;
+  font-size: 0.95rem;
+}
+
+.site-header nav a:hover {
+  color: #ffffff;
+}
+
+/* Hero */
+.hero {
+  padding: 3rem 0;
+}
+
+.hero h2 {
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+}
+
+.hero h3 {
+  font-size: 1.3rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+  color: #374151;
+}
+
+.hero p {
+  max-width: 650px;
+  margin-bottom: 1.5rem;
+}
+
+/* Buttons */
+.btn-primary {
+  display: inline-block;
+  background: #2563eb;
+  color: #ffffff;
+  padding: 0.7rem 1.2rem;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+
+.btn-primary:hover {
+  background: #1d4ed8;
+}
+
+/* Sections */
+section {
+  margin-bottom: 3rem;
+}
+
+section h3 {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+
+section ul {
+  padding-left: 1.2rem;
+}
+
+section ul li {
+  margin-bottom: 0.6rem;
+}
+
+/* Footer */
+.site-footer {
+  background: #020617;
+  color: #9ca3af;
+  text-align: center;
+  padding: 1.2rem;
+  font-size: 0.85rem;
+}

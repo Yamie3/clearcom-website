@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block title %}Contact – ClearCom Solutions{% endblock %}
+
+{% block content %}
+<section>
+  <h2>Request a Demo</h2>
+  <p>
+    Tell us about your organization and we’ll get in touch.
+  </p>
+
+  <form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit" class="btn-primary">Submit</button>
+  </form>
+</section>
+{% endblock %}
