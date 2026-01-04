@@ -100,6 +100,11 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
+ALLOWED_HOSTS = [
+    "clearcomsolutions.com",
+    "www.clearcomsolutions.com",
+    "clearcom-website.onrender.com",
+]
 
 # Internationalization
 # https://docs.djangoproject.com/en/5.2/topics/i18n/
