@@ -106,6 +106,13 @@ ALLOWED_HOSTS = [
     "clearcom-website.onrender.com",
 ]
 
+# Security settings (production)
+
+SECURE_SSL_REDIRECT = True
+
+SESSION_COOKIE_SECURE = True
+CSRF_COOKIE_SECURE = True
+
 # Internationalization
 # https://docs.djangoproject.com/en/5.2/topics/i18n/
 
