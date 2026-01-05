@@ -9,20 +9,31 @@ ClearCom Solutions Group (CSG) builds accountability and governance technology t
 {% block content %}
 
 <!-- HERO -->
-<section class="hero">
-  <h2>Accountability that moves organizations forward</h2>
-  <p>
-    ClearCom Solutions Group (CSG) builds governance and accountability technology
-    that helps organizations turn insight into owned, trackable action.
-  </p>
+<section class="hero dashboard-hero">
+  <div class="hero-grid">
 
-  <div style="margin-top: 2rem;">
-  <a href="/steward/" class="btn-primary">Explore Steward</a>
-  <a href="/contact/" style="margin-left: 1.5rem; font-weight: 500;">
-    Request a Demo
-  </a>
-</div>
+    <!-- LEFT -->
+    <div>
+      <h2>Accountability that moves organizations forward</h2>
+      <p>
+        ClearCom Solutions Group (CSG) builds governance and accountability
+        technology that helps leadership turn insight into owned,
+        trackable action.
+      </p>
 
+      <div class="hero-actions">
+        <a href="/steward/" class="btn-primary">Explore Steward</a>
+        <a href="/contact/" class="link-secondary">Request a Demo</a>
+      </div>
+    </div>
+
+    <!-- RIGHT -->
+    <div class="hero-visual">
+      <img src="{% static 'images/dashboard-mockup.png' %}"
+           alt="Steward accountability dashboard">
+    </div>
+
+  </div>
 </section>
 
 <!-- PROBLEM -->
