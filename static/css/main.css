@@ -7,38 +7,40 @@
 
 /* Base */
 body {
-  font-family: "Segoe UI", Roboto, Arial, sans-serif;
-  background-color: #f4f6f8;
+  font-family: "Inter", "Segoe UI", Roboto, Arial, sans-serif;
+  background-color: #f8fafc;
   color: #1f2937;
-  line-height: 1.6;
+  line-height: 1.7;
 }
 
 /* Layout */
 .container {
   max-width: 1100px;
   margin: auto;
-  padding: 1.5rem;
+  padding: 2rem 1.5rem;
 }
 
 /* Header */
 .site-header {
   background: #0f172a;
-  color: #ffffff;
+  border-bottom: 1px solid #020617;
 }
 
-.site-header .logo {
-  font-size: 1.4rem;
+.site-header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.2rem;
   font-weight: 600;
 }
 
-.site-header nav {
-  margin-top: 0.5rem;
-}
-
 .site-header nav a {
-  color: #e5e7eb;
+  color: #cbd5f5;
+  margin-left: 1.5rem;
   text-decoration: none;
-  margin-right: 1.2rem;
   font-size: 0.95rem;
 }
 
@@ -48,35 +50,36 @@ body {
 
 /* Hero */
 .hero {
-  padding: 3rem 0;
+  padding: 5rem 0;
+  background: linear-gradient(
+    180deg,
+    #f8fafc 0%,
+    #eef2ff 100%
+  );
 }
 
 .hero h2 {
-  font-size: 2.2rem;
+  font-size: 2.4rem;
+  max-width: 750px;
   margin-bottom: 1rem;
-}
-
-.hero h3 {
-  font-size: 1.3rem;
-  font-weight: 400;
-  margin-bottom: 1rem;
-  color: #374151;
 }
 
 .hero p {
   max-width: 650px;
-  margin-bottom: 1.5rem;
+  font-size: 1.05rem;
+  margin-bottom: 2rem;
+  color: #374151;
 }
 
 /* Buttons */
 .btn-primary {
-  display: inline-block;
   background: #2563eb;
-  color: #ffffff;
-  padding: 0.7rem 1.2rem;
-  border-radius: 4px;
+  color: white;
+  padding: 0.75rem 1.4rem;
+  border-radius: 6px;
   text-decoration: none;
   font-size: 0.95rem;
+  font-weight: 500;
 }
 
 .btn-primary:hover {
@@ -85,20 +88,34 @@ body {
 
 /* Sections */
 section {
-  margin-bottom: 3rem;
+  margin-bottom: 4rem;
 }
 
 section h3 {
-  font-size: 1.4rem;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+section p {
+  max-width: 700px;
   margin-bottom: 1rem;
 }
 
 section ul {
-  padding-left: 1.2rem;
+  margin-left: 1.2rem;
+  margin-top: 1rem;
 }
 
 section ul li {
   margin-bottom: 0.6rem;
+}
+
+/* Soft cards (use later) */
+.card {
+  background: white;
+  padding: 1.8rem;
+  border-radius: 10px;
+  box-shadow: 0 10px 25px rgba(15, 23, 42, 0.06);
 }
 
 /* Footer */
@@ -106,6 +123,6 @@ section ul li {
   background: #020617;
   color: #9ca3af;
   text-align: center;
-  padding: 1.2rem;
+  padding: 2rem 1rem;
   font-size: 0.85rem;
 }
