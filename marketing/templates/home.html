@@ -1,9 +1,12 @@
 {% extends "base.html" %}
+{% load static %}
 
-{% block title %}ClearCom Solutions Group (CSG) – Accountability & Governance Technology{% endblock %}
+{% block title %}
+ClearCom Solutions Group (CSG) – Accountability & Governance Technology
+{% endblock %}
 
 {% block meta_description %}
-ClearCom Solutions Group (CSG) builds accountability and governance technology that helps organizations turn insight into owned, trackable action.
+<meta name="description" content="ClearCom Solutions Group (CSG) builds accountability and governance technology that helps organizations turn insight into owned, trackable action.">
 {% endblock %}
 
 {% block content %}
@@ -12,7 +15,6 @@ ClearCom Solutions Group (CSG) builds accountability and governance technology t
 <section class="hero dashboard-hero">
   <div class="hero-grid">
 
-    <!-- LEFT -->
     <div>
       <h2>Accountability that moves organizations forward</h2>
       <p>
@@ -27,7 +29,6 @@ ClearCom Solutions Group (CSG) builds accountability and governance technology t
       </div>
     </div>
 
-    <!-- RIGHT -->
     <div class="hero-visual">
       <img src="{% static 'images/dashboard-mockup.png' %}"
            alt="Steward accountability dashboard">
@@ -36,116 +37,87 @@ ClearCom Solutions Group (CSG) builds accountability and governance technology t
   </div>
 </section>
 
-<!-- PROBLEM -->
-<section>
-  <h3>Insight alone does not create results</h3>
-  <p>
-    Organizations generate insights every day — from audits, reviews, meetings,
-    and assessments. But too often:
-  </p>
+<!-- EXECUTIVE PROBLEM SNAPSHOT -->
+<section class="panel">
+  <h3>Where accountability breaks down</h3>
 
-  <ul>
-    <li>Actions are agreed and then forgotten</li>
-    <li>Ownership is unclear</li>
-    <li>Deadlines pass without visibility</li>
-    <li>Leadership lacks confidence that issues are truly closed</li>
-  </ul>
-
-  <p>
-    The result is frustration, risk exposure, and stalled progress.
-  </p>
+  <div class="card-grid">
+    <div class="card">Actions are agreed but not followed through</div>
+    <div class="card">Ownership becomes unclear over time</div>
+    <div class="card">Deadlines pass without escalation</div>
+    <div class="card">Leadership lacks confidence in closure</div>
+  </div>
 </section>
 
-<!-- SOLUTION -->
+<!-- SOLUTION OVERVIEW -->
 <section>
-  <h3>A calm, structured approach to accountability</h3>
+  <h3>A structured approach to follow-through</h3>
   <p>
-    ClearCom Solutions Group focuses on one thing:
-    <strong>helping organizations move from insight to accountability.</strong>
+    ClearCom Solutions Group focuses on one outcome:
+    <strong>ensuring accountability does not fade after decisions are made.</strong>
   </p>
 
-  <p>
-    Our technology provides a clear, structured way to:
-  </p>
-
-  <ul>
-    <li>Assign ownership</li>
-    <li>Track commitments</li>
-    <li>Monitor progress</li>
-    <li>Maintain evidence</li>
-    <li>Close issues with confidence</li>
-  </ul>
-
-  <p>
-    No noise. No blame. Just clarity.
-  </p>
+  <div class="card-grid">
+    <div class="card">Clear ownership</div>
+    <div class="card">Visible progress</div>
+    <div class="card">Centralized evidence</div>
+    <div class="card">Confident closure</div>
+  </div>
 </section>
 
-<!-- PRODUCT -->
-<section>
-  <h3>Meet <strong>Steward</strong></h3>
-
-  <p>
-    <strong>Steward</strong> is our flagship platform.
+<!-- STEWARD PRODUCT PANEL -->
+<section class="panel panel-dark">
+  <h3>Steward</h3>
+  <p class="panel-subtitle">
+    Our flagship accountability platform
   </p>
 
-  <p>
-    It helps leadership, management, and assurance teams ensure that:
-  </p>
+  <div class="card-grid">
+    <div class="card">
+      <h4>Ownership</h4>
+      <p>Every issue has a responsible owner and clear timeline.</p>
+    </div>
 
-  <ul>
-    <li>Issues are owned</li>
-    <li>Actions are tracked</li>
-    <li>Commitments are fulfilled</li>
-    <li>Accountability is visible</li>
-  </ul>
+    <div class="card">
+      <h4>Tracking</h4>
+      <p>Progress, updates, and status changes are visible in one place.</p>
+    </div>
 
-  <p>
-    <em>From insight to accountability.</em>
-  </p>
+    <div class="card">
+      <h4>Evidence</h4>
+      <p>Supporting documents and history are maintained with each action.</p>
+    </div>
 
-  <a href="/steward/" class="btn-primary">Learn more about Steward</a>
+    <div class="card">
+      <h4>Oversight</h4>
+      <p>Leadership sees what is open, overdue, and closed.</p>
+    </div>
+  </div>
+
+  <div style="margin-top: 2rem;">
+    <a href="/steward/" class="btn-primary">Learn more about Steward</a>
+  </div>
 </section>
 
-<!-- AUDIENCE -->
-<section>
-  <h3>Built for organizations that value execution</h3>
-
+<!-- TRUST SIGNALS -->
+<section class="trust-section">
+  <h3>Designed for leadership and oversight</h3>
   <p>
-    ClearCom Solutions Group serves:
+    Our solutions are built for organizations that value execution and accountability.
   </p>
 
-  <ul>
+  <ul class="trust-list">
     <li>Boards & Executives</li>
-    <li>Management Teams</li>
-    <li>Internal Audit & Risk Functions</li>
+    <li>Senior Management</li>
+    <li>Internal Audit & Risk</li>
+    <li>Compliance & Governance</li>
     <li>NGOs, Cooperatives & Corporates</li>
   </ul>
-
-  <p>
-    If accountability matters, our solutions fit.
-  </p>
-</section>
-
-<!-- TRUST -->
-<section>
-  <h3>Built by practitioners</h3>
-
-  <p>
-    Our solutions are designed by professionals who understand governance,
-    assurance, and management realities.
-  </p>
-
-  <p>
-    We build technology that supports leadership —
-    not software that creates resistance.
-  </p>
 </section>
 
 <!-- FINAL CTA -->
-<section>
+<section class="panel">
   <h3>Ready to close the loop?</h3>
-
   <p>
     Discover how Steward helps organizations move from identifying issues
     to confidently closing them.

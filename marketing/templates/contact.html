@@ -1,17 +1,50 @@
 {% extends "base.html" %}
-{% block title %}Contact – ClearCom Solutions{% endblock %}
+{% block title %}Request a Demo – ClearCom Solutions Group{% endblock %}
 
 {% block content %}
-<section>
-  <h2>Request a Demo</h2>
-  <p>
-    Tell us about your organization and we’ll get in touch.
-  </p>
 
-  <form method="post">
-    {% csrf_token %}
-    {{ form.as_p }}
-    <button type="submit" class="btn-primary">Submit</button>
-  </form>
+<section class="form-section">
+  <div class="form-wrapper">
+
+    <h2>Request a Demo</h2>
+    <p class="form-intro">
+      Share a few details about your organization and we’ll get in touch
+      to schedule a short demonstration of <strong>Steward</strong>.
+    </p>
+
+    <form method="post" class="demo-form">
+      {% csrf_token %}
+
+      <div class="form-group">
+        <label for="{{ form.name.id_for_label }}">Your name</label>
+        {{ form.name }}
+      </div>
+
+      <div class="form-group">
+        <label for="{{ form.organization.id_for_label }}">Organization</label>
+        {{ form.organization }}
+      </div>
+
+      <div class="form-group">
+        <label for="{{ form.email.id_for_label }}">Email address</label>
+        {{ form.email }}
+      </div>
+
+      <div class="form-group">
+        <label for="{{ form.message.id_for_label }}">
+          Message <span class="optional">(optional)</span>
+        </label>
+        {{ form.message }}
+      </div>
+
+      <div class="form-actions">
+        <button type="submit" class="btn-primary">
+          Request Demo
+        </button>
+      </div>
+    </form>
+
+  </div>
 </section>
+
 {% endblock %}

@@ -1,43 +1,111 @@
 {% extends "base.html" %}
-{% block title %}Pricing – ClearCom Solutions{% endblock %}
+
+{% block title %}
+Pricing & Packages – ClearCom Solutions Group
+{% endblock %}
 
 {% block content %}
-<section>
+
+<!-- HERO -->
+<section class="panel">
   <h2>Pricing & Packages</h2>
   <p>
-    Steward is offered with flexible packages designed to match your
-    organization’s size and maturity.
+    Steward is offered through flexible packages designed to support
+    organizations at different stages of accountability maturity.
   </p>
 </section>
 
+<!-- PACKAGES -->
 <section>
-  <h3>Pilot Package</h3>
-  <p><strong>60–90 days</strong></p>
-  <ul>
-    <li>Up to 20 users</li>
-    <li>Full Steward functionality</li>
-    <li>Onboarding and support</li>
-    <li>Feedback-driven refinement</li>
-  </ul>
+  <div class="card-grid">
+
+    <!-- PILOT -->
+    <div class="card">
+      <h3>Pilot Package</h3>
+      <p class="package-duration">60–90 days</p>
+
+      <p>
+        A structured pilot designed to help teams experience Steward
+        in a real operational context.
+      </p>
+
+      <ul>
+        <li>Up to 20 users</li>
+        <li>Full Steward functionality</li>
+        <li>Guided onboarding and support</li>
+        <li>Feedback-driven refinement</li>
+      </ul>
+
+      <a href="/contact/" class="btn-primary">
+        Start a Pilot
+      </a>
+    </div>
+
+    <!-- STANDARD -->
+    <div class="card">
+      <h3>Standard Package</h3>
+      <p class="package-duration">Ongoing</p>
+
+      <p>
+        For organizations ready to embed accountability
+        into day-to-day operations.
+      </p>
+
+      <ul>
+        <li>Up to 50 users</li>
+        <li>Issue and action tracking</li>
+        <li>Dashboards and reporting</li>
+        <li>Email notifications</li>
+      </ul>
+    </div>
+
+    <!-- ENTERPRISE -->
+    <div class="card">
+      <h3>Enterprise Package</h3>
+      <p class="package-duration">Custom</p>
+
+      <p>
+        Designed for larger or more complex organizations
+        with advanced governance needs.
+      </p>
+
+      <ul>
+        <li>Unlimited users</li>
+        <li>Advanced reporting</li>
+        <li>Escalation workflows</li>
+        <li>Priority support</li>
+      </ul>
+    </div>
+
+  </div>
 </section>
 
-<section>
-  <h3>Standard Package</h3>
-  <ul>
-    <li>Up to 50 users</li>
-    <li>Issue and action tracking</li>
-    <li>Dashboards and reporting</li>
-    <li>Email notifications</li>
-  </ul>
+<!-- PRICING NOTE -->
+<section class="panel">
+  <h3>Pricing approach</h3>
+  <p>
+    Pricing is determined based on organization size,
+    complexity, and support requirements.
+  </p>
+
+  <p>
+    We encourage organizations to begin with a pilot to
+    ensure Steward fits their governance environment
+    before full rollout.
+  </p>
 </section>
 
-<section>
-  <h3>Enterprise Package</h3>
-  <ul>
-    <li>Unlimited users</li>
-    <li>Advanced reporting</li>
-    <li>Escalation workflows</li>
-    <li>Priority support</li>
-  </ul>
+<!-- CTA -->
+<section class="panel">
+  <h3>Discuss the right package for your organization</h3>
+  <p>
+    We’ll help you select the most appropriate option
+    based on your structure and objectives.
+  </p>
+
+  <a href="/contact/" class="btn-primary">
+    Request a Pricing Discussion
+  </a>
 </section>
+
 {% endblock %}

@@ -1,73 +1,84 @@
 {% extends "base.html" %}
+{% load static %}
 
-{% block title %}Steward – From insight to accountability{% endblock %}
+{% block title %}
+Steward – From Insight to Accountability
+{% endblock %}
 
 {% block meta_description %}
-Steward is an accountability platform by ClearCom Solutions Group that helps organizations turn issues, decisions, and recommendations into owned, trackable action.
+<meta name="description" content="Steward is an accountability platform by ClearCom Solutions Group that helps organizations turn issues, decisions, and recommendations into owned, trackable action.">
 {% endblock %}
 
 {% block content %}
 
 <!-- HERO -->
-<section class="hero">
-  <h2>Steward</h2>
-  <h3>From insight to accountability</h3>
+<section class="hero dashboard-hero">
+  <div class="hero-grid">
 
-  <p>
-    Steward is an accountability platform that helps organizations ensure
-    that issues, decisions, and recommendations are clearly owned,
-    actively tracked, and confidently closed.
-  </p>
+    <div>
+      <h2>Steward</h2>
+      <h3>From insight to accountability</h3>
 
-  <a href="/contact/" class="btn-primary">Request a Demo</a>
+      <p>
+        Steward is an accountability platform that helps organizations ensure
+        issues, decisions, and recommendations are clearly owned,
+        actively tracked, and confidently closed.
+      </p>
+
+      <div class="hero-actions">
+        <a href="/contact/" class="btn-primary">Request a Demo</a>
+      </div>
+    </div>
+
+    <div class="hero-visual">
+      <img src="{% static 'images/dashboard-mockup.png' %}"
+           alt="Steward accountability dashboard">
+    </div>
+
+  </div>
 </section>
 
-<!-- THE PROBLEM -->
-<section>
+<!-- EXECUTIVE PROBLEM SNAPSHOT -->
+<section class="panel">
   <h3>The accountability gap</h3>
 
-  <p>
-    Most organizations are good at identifying issues.
-    What’s harder is ensuring those issues are followed through.
-  </p>
+  <div class="card-grid">
+    <div class="card">Actions are agreed but not consistently followed through</div>
+    <div class="card">Ownership becomes unclear over time</div>
+    <div class="card">Deadlines pass without escalation</div>
+    <div class="card">Evidence is scattered across emails and files</div>
+    <div class="card">Leadership lacks confidence in closure</div>
+  </div>
 
-  <ul>
-    <li>Actions are agreed but not consistently tracked</li>
-    <li>Ownership becomes unclear over time</li>
-    <li>Deadlines pass without escalation</li>
-    <li>Evidence is scattered across emails and files</li>
-    <li>Leadership lacks confidence in closure</li>
-  </ul>
-
-  <p>
+  <p style="margin-top: 1.5rem;">
     Steward exists to close this gap.
   </p>
 </section>
 
-<!-- THE SOLUTION -->
+<!-- SOLUTION OVERVIEW -->
 <section>
   <h3>A calm, structured way to drive follow-through</h3>
 
   <p>
-    Steward provides a single, structured space where accountability lives.
-    It helps organizations move beyond reporting and into execution.
+    Steward provides a single, structured space where accountability lives,
+    helping organizations move beyond reporting and into execution.
   </p>
 
-  <ul>
-    <li>Clear ownership for every action</li>
-    <li>Visible progress and timelines</li>
-    <li>Centralized evidence and history</li>
-    <li>Responsible escalation when actions stall</li>
-    <li>Confidence that issues are truly closed</li>
-  </ul>
+  <div class="card-grid">
+    <div class="card">Clear ownership for every action</div>
+    <div class="card">Visible progress and timelines</div>
+    <div class="card">Centralized evidence and history</div>
+    <div class="card">Responsible escalation</div>
+    <div class="card">Confidence that issues are truly closed</div>
+  </div>
 
-  <p>
+  <p style="margin-top: 1.5rem;">
     No noise. No blame. Just clarity.
   </p>
 </section>
 
 <!-- CORE CAPABILITIES -->
-<section>
+<section class="panel panel-dark">
   <h3>Core capabilities</h3>
 
   <div class="card-grid">
@@ -75,7 +86,7 @@ Steward is an accountability platform by ClearCom Solutions Group that helps org
     <div class="card">
       <h4>Clear Ownership</h4>
       <p>
-        Every issue see assigned ownership and a defined timeline.
+        Every issue has an assigned owner and defined timeline.
         Accountability is explicit, not assumed.
       </p>
     </div>
@@ -83,7 +94,7 @@ Steward is an accountability platform by ClearCom Solutions Group that helps org
     <div class="card">
       <h4>Action Tracking</h4>
       <p>
-        Track progress, updates, and status changes in one place —
+        Progress, updates, and status changes are tracked in one place
         without chasing emails.
       </p>
     </div>
@@ -92,14 +103,14 @@ Steward is an accountability platform by ClearCom Solutions Group that helps org
       <h4>Evidence & History</h4>
       <p>
         Supporting documents and commentary are attached directly
-        to actions, maintaining a clear trail.
+        to actions, maintaining a complete audit trail.
       </p>
     </div>
 
     <div class="card">
       <h4>Oversight & Visibility</h4>
       <p>
-        Dashboards give leadership confidence in what is open,
+        Dashboards provide leadership with a clear view of what is open,
         overdue, and closed.
       </p>
     </div>
@@ -116,7 +127,7 @@ Steward is an accountability platform by ClearCom Solutions Group that helps org
     accountability, and governance.
   </p>
 
-  <ul>
+  <ul class="trust-list">
     <li>Boards and Executive Management</li>
     <li>Senior and Line Management</li>
     <li>Internal Audit and Risk Functions</li>
@@ -126,17 +137,17 @@ Steward is an accountability platform by ClearCom Solutions Group that helps org
 </section>
 
 <!-- DIFFERENTIATION -->
-<section>
+<section class="panel">
   <h3>Why organizations choose Steward</h3>
 
-  <ul>
-    <li>Language leaders accept and engage with</li>
-    <li>Focus on closure, not just reporting</li>
-    <li>Clear accountability without intimidation</li>
-    <li>Designed by governance and assurance practitioners</li>
-  </ul>
+  <div class="card-grid">
+    <div class="card">Language leaders accept and engage with</div>
+    <div class="card">Focus on closure, not just reporting</div>
+    <div class="card">Clear accountability without intimidation</div>
+    <div class="card">Designed by governance and assurance practitioners</div>
+  </div>
 
-  <p>
+  <p style="margin-top: 1.5rem;">
     Steward supports leadership rather than policing it.
   </p>
 </section>
@@ -157,7 +168,7 @@ Steward is an accountability platform by ClearCom Solutions Group that helps org
 </section>
 
 <!-- FINAL CTA -->
-<section>
+<section class="panel">
   <h3>Bring follow-through to governance</h3>
 
   <p>
