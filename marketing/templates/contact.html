@@ -1,15 +1,19 @@
 {% extends "base.html" %}
-{% block title %}Request a Demo – ClearCom Solutions Group{% endblock %}
+
+{% block title %}
+Request a Demo – ClearCom Solutions Group
+{% endblock %}
 
 {% block content %}
 
 <section class="form-section">
   <div class="form-wrapper">
 
-    <h2>Request a Demo</h2>
+    <h2>Request a Steward Demo</h2>
     <p class="form-intro">
-      Share a few details about your organization and we’ll get in touch
-      to schedule a short demonstration of <strong>Steward</strong>.
+      Share a few details below and we’ll contact you to arrange
+      a short, focused demonstration of <strong>Steward</strong>
+      based on your organization’s needs.
     </p>
 
     <form method="post" class="demo-form">
@@ -32,7 +36,8 @@
 
       <div class="form-group">
         <label for="{{ form.message.id_for_label }}">
-          Message <span class="optional">(optional)</span>
+          Anything specific you’d like us to focus on?
+          <span class="optional">(optional)</span>
         </label>
         {{ form.message }}
       </div>
@@ -43,6 +48,11 @@
         </button>
       </div>
     </form>
+
+    <p class="form-reassurance">
+      We respect your time and privacy. Your information will only be used
+      to respond to this request.
+    </p>
 
   </div>
 </section>
